@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AB9BF212ABA836F0083783A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF202ABA836F0083783A /* AppDelegate.m */; };
 		4AB9BF232ABA83710083783A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9BF222ABA83710083783A /* Assets.xcassets */; };
-		4AB9BF262ABA83710083783A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9BF242ABA83710083783A /* MainMenu.xib */; };
-		4AB9BF282ABA83710083783A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF272ABA83710083783A /* main.m */; };
 		4AB9BF332ABA83710083783A /* _D_Game_EngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF322ABA83710083783A /* _D_Game_EngineTests.m */; };
 		4AB9BF3D2ABA83710083783A /* _D_Game_EngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF3C2ABA83710083783A /* _D_Game_EngineUITests.m */; };
 		4AB9BF3F2ABA83710083783A /* _D_Game_EngineUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF3E2ABA83710083783A /* _D_Game_EngineUITestsLaunchTests.m */; };
+		4AB9BF522ABA84D80083783A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF512ABA84D80083783A /* game.cpp */; };
+		4AB9BF562ABA855F0083783A /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF552ABA855F0083783A /* SDL2.framework */; };
+		4AB9BF572ABA855F0083783A /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF552ABA855F0083783A /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AB9BF5A2ABA889A0083783A /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; };
+		4AB9BF5B2ABA889A0083783A /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AB9BF5D2ABA8EB90083783A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF5C2ABA8EB90083783A /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,19 +36,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4AB9BF582ABA855F0083783A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4AB9BF572ABA855F0083783A /* SDL2.framework in Embed Frameworks */,
+				4AB9BF5B2ABA889A0083783A /* SDL2_image.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4AB9BF1C2ABA836F0083783A /* 2D_Game_Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2D_Game_Engine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AB9BF1F2ABA836F0083783A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4AB9BF202ABA836F0083783A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4AB9BF222ABA83710083783A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4AB9BF252ABA83710083783A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4AB9BF272ABA83710083783A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _D_Game_Engine.entitlements; sourceTree = "<group>"; };
 		4AB9BF2E2ABA83710083783A /* 2D_Game_EngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2D_Game_EngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB9BF322ABA83710083783A /* _D_Game_EngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_Game_EngineTests.m; sourceTree = "<group>"; };
 		4AB9BF382ABA83710083783A /* 2D_Game_EngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2D_Game_EngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB9BF3C2ABA83710083783A /* _D_Game_EngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_Game_EngineUITests.m; sourceTree = "<group>"; };
 		4AB9BF3E2ABA83710083783A /* _D_Game_EngineUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_Game_EngineUITestsLaunchTests.m; sourceTree = "<group>"; };
+		4AB9BF512ABA84D80083783A /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		4AB9BF532ABA84E90083783A /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		4AB9BF552ABA855F0083783A /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
+		4AB9BF592ABA88990083783A /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
+		4AB9BF5C2ABA8EB90083783A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB9BF562ABA855F0083783A /* SDL2.framework in Frameworks */,
+				4AB9BF5A2ABA889A0083783A /* SDL2_image.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +101,7 @@
 				4AB9BF312ABA83710083783A /* 2D_Game_EngineTests */,
 				4AB9BF3B2ABA83710083783A /* 2D_Game_EngineUITests */,
 				4AB9BF1D2ABA836F0083783A /* Products */,
+				4AB9BF542ABA855E0083783A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +118,11 @@
 		4AB9BF1E2ABA836F0083783A /* 2D_Game_Engine */ = {
 			isa = PBXGroup;
 			children = (
-				4AB9BF1F2ABA836F0083783A /* AppDelegate.h */,
-				4AB9BF202ABA836F0083783A /* AppDelegate.m */,
 				4AB9BF222ABA83710083783A /* Assets.xcassets */,
-				4AB9BF242ABA83710083783A /* MainMenu.xib */,
-				4AB9BF272ABA83710083783A /* main.m */,
 				4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */,
+				4AB9BF512ABA84D80083783A /* game.cpp */,
+				4AB9BF532ABA84E90083783A /* game.h */,
+				4AB9BF5C2ABA8EB90083783A /* main.c */,
 			);
 			path = 2D_Game_Engine;
 			sourceTree = "<group>";
@@ -123,6 +144,15 @@
 			path = 2D_Game_EngineUITests;
 			sourceTree = "<group>";
 		};
+		4AB9BF542ABA855E0083783A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AB9BF592ABA88990083783A /* SDL2_image.framework */,
+				4AB9BF552ABA855F0083783A /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +163,7 @@
 				4AB9BF182ABA836F0083783A /* Sources */,
 				4AB9BF192ABA836F0083783A /* Frameworks */,
 				4AB9BF1A2ABA836F0083783A /* Resources */,
+				4AB9BF582ABA855F0083783A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +258,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB9BF232ABA83710083783A /* Assets.xcassets in Resources */,
-				4AB9BF262ABA83710083783A /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB9BF282ABA83710083783A /* main.m in Sources */,
-				4AB9BF212ABA836F0083783A /* AppDelegate.m in Sources */,
+				4AB9BF5D2ABA8EB90083783A /* main.c in Sources */,
+				4AB9BF522ABA84D80083783A /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,17 +318,6 @@
 			targetProxy = 4AB9BF392ABA83710083783A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4AB9BF242ABA83710083783A /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AB9BF252ABA83710083783A /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4AB9BF402ABA83710083783A /* Debug */ = {
@@ -419,6 +438,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -443,6 +466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
