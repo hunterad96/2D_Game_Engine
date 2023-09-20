@@ -1,6 +1,7 @@
 #include "game.h"
 
 SDL_Texture* playerTexture;
+SDL_Rect srcRect, destRect;
 
 Game::Game()
 {
@@ -20,36 +21,27 @@ void Game::init(const char* title, int xpos, int ypos, int width, int height, bo
     {
         flags = SDL_WINDOW_FULLSCREEN;
     }
-        
-
+    
     if (SDL_Init(SDL_INIT_EVERYTHING) == 0)
     {
-        std::cout << "SDL Initialized..." << std::endl;
-
-        window = SDL_CreateWindow(title, xpos, ypos, width, height, flags);
-
-        if (window)
-        {
-            std::cout << "Window Created!" << std::endl;
-        }
-
+        window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, flags);
+        
         renderer = SDL_CreateRenderer(window, -1, 0);
-
+        
         if (renderer)
         {
             SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-            std::cout << "Renderer Created!" << std::endl;
         }
-
+        
         isRunning = true;
     }
-    else
-    {
-        isRunning = false;
-    }
     
-    SDL_Surface* tempSurface = IMG_Load("assets/Knight.pn");
+    SDL_Surface* tempSurface = IMG_Load("assets/Knight.png");
     
+    playerTexture = SDL_CreateTextureFromSurface(renderer, tempSurface);
+    
+    //Clean up temporary surface pointer
+    SDL_FreeSurface(tempSurface);
 }
 
 void Game::handleEvents()
@@ -73,13 +65,17 @@ void Game::update()
 {
     count++;
     std::cout << count << std::endl;
+    
+    destRect.h = 32;
+    destRect.w = 32;
+    destRect.x = count%800;
 }
 
 void Game::render()
 {
     SDL_RenderClear(renderer);
     
-    //this is where we would add stuff to render
+    SDL_RenderCopy(renderer, playerTexture, NULL, &destRect);
 
     SDL_RenderPresent(renderer);
 }

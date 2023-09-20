@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AB2D4EB2ABA93EA0006AD91 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2D4EA2ABA93EA0006AD91 /* assets */; };
 		4AB9BF232ABA83710083783A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB9BF222ABA83710083783A /* Assets.xcassets */; };
 		4AB9BF332ABA83710083783A /* _D_Game_EngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF322ABA83710083783A /* _D_Game_EngineTests.m */; };
 		4AB9BF3D2ABA83710083783A /* _D_Game_EngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF3C2ABA83710083783A /* _D_Game_EngineUITests.m */; };
@@ -16,7 +17,7 @@
 		4AB9BF572ABA855F0083783A /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF552ABA855F0083783A /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AB9BF5A2ABA889A0083783A /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; };
 		4AB9BF5B2ABA889A0083783A /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4AB9BF5D2ABA8EB90083783A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4AB9BF5C2ABA8EB90083783A /* main.c */; };
+		4AE26E512ABA980B00834B6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E4F2ABA980B00834B6F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4AB2D4EA2ABA93EA0006AD91 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		4AB9BF1C2ABA836F0083783A /* 2D_Game_Engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2D_Game_Engine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB9BF222ABA83710083783A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _D_Game_Engine.entitlements; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		4AB9BF532ABA84E90083783A /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 		4AB9BF552ABA855F0083783A /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		4AB9BF592ABA88990083783A /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
-		4AB9BF5C2ABA8EB90083783A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4AE26E4F2ABA980B00834B6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		4AB9BF132ABA836F0083783A = {
 			isa = PBXGroup;
 			children = (
+				4AB2D4EA2ABA93EA0006AD91 /* assets */,
 				4AB9BF1E2ABA836F0083783A /* 2D_Game_Engine */,
 				4AB9BF312ABA83710083783A /* 2D_Game_EngineTests */,
 				4AB9BF3B2ABA83710083783A /* 2D_Game_EngineUITests */,
@@ -122,7 +125,7 @@
 				4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */,
 				4AB9BF512ABA84D80083783A /* game.cpp */,
 				4AB9BF532ABA84E90083783A /* game.h */,
-				4AB9BF5C2ABA8EB90083783A /* main.c */,
+				4AE26E4F2ABA980B00834B6F /* main.cpp */,
 			);
 			path = 2D_Game_Engine;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AB9BF232ABA83710083783A /* Assets.xcassets in Resources */,
+				4AB2D4EB2ABA93EA0006AD91 /* assets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB9BF5D2ABA8EB90083783A /* main.c in Sources */,
+				4AE26E512ABA980B00834B6F /* main.cpp in Sources */,
 				4AB9BF522ABA84D80083783A /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
