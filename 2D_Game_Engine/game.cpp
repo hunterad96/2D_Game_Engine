@@ -66,8 +66,9 @@ void Game::update()
     count++;
     std::cout << count << std::endl;
     
-    destRect.h = 32;
-    destRect.w = 32;
+    destRect.h = 32 * 2;
+    destRect.w = 32 * 2;
+    destRect.y = 300;
     destRect.x = count%800;
 }
 
