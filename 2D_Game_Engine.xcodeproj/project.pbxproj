@@ -18,6 +18,7 @@
 		4AB9BF5A2ABA889A0083783A /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; };
 		4AB9BF5B2ABA889A0083783A /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB9BF592ABA88990083783A /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AE26E512ABA980B00834B6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E4F2ABA980B00834B6F /* main.cpp */; };
+		4AE26E542ABAA67400834B6F /* textureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E532ABAA67400834B6F /* textureManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		4AB9BF552ABA855F0083783A /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2.framework; sourceTree = "<group>"; };
 		4AB9BF592ABA88990083783A /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_image.framework; sourceTree = "<group>"; };
 		4AE26E4F2ABA980B00834B6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4AE26E522ABAA5E500834B6F /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		4AE26E532ABAA67400834B6F /* textureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textureManager.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				4AB9BF222ABA83710083783A /* Assets.xcassets */,
 				4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */,
 				4AB9BF512ABA84D80083783A /* game.cpp */,
+				4AE26E522ABAA5E500834B6F /* TextureManager.h */,
+				4AE26E532ABAA67400834B6F /* textureManager.cpp */,
 				4AB9BF532ABA84E90083783A /* game.h */,
 				4AE26E4F2ABA980B00834B6F /* main.cpp */,
 			);
@@ -286,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE26E542ABAA67400834B6F /* textureManager.cpp in Sources */,
 				4AE26E512ABA980B00834B6F /* main.cpp in Sources */,
 				4AB9BF522ABA84D80083783A /* game.cpp in Sources */,
 			);
