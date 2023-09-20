@@ -70,6 +70,7 @@
 		4AE26E4F2ABA980B00834B6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4AE26E522ABAA5E500834B6F /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
 		4AE26E532ABAA67400834B6F /* textureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textureManager.cpp; sourceTree = "<group>"; };
+		4AE26E552ABAB41500834B6F /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +131,7 @@
 				4AE26E522ABAA5E500834B6F /* TextureManager.h */,
 				4AE26E532ABAA67400834B6F /* textureManager.cpp */,
 				4AB9BF532ABA84E90083783A /* game.h */,
+				4AE26E552ABAB41500834B6F /* GameObject.h */,
 				4AE26E4F2ABA980B00834B6F /* main.cpp */,
 			);
 			path = 2D_Game_Engine;
