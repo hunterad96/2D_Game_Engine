@@ -4,7 +4,6 @@
 
 GameObject* player;
 
-
 Game::Game()
 {
 

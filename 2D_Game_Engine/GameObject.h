@@ -3,7 +3,6 @@
 #include "game.h"
 
 class GameObject {
-
 public:
     GameObject(const char* pTextureSheet, SDL_Renderer* pRenderer, int pXpos, int pYpos);
     ~GameObject();
