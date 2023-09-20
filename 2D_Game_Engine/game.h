@@ -9,7 +9,7 @@ public:
     Game();
     ~Game();
 
-    void init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
+    void init(const char* pTitle, int pXpos, int pYpos, int pWidth, int pHeight, bool Pfullscreen);
     void handleEvents();
     void update();
     void render();
