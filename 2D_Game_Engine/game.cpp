@@ -3,6 +3,7 @@
 #include "GameObject.h"
 
 GameObject* player;
+SDL_Renderer* Game::renderer = nullptr;
 
 Game::Game()
 {
@@ -37,7 +38,7 @@ void Game::init(const char* pTitle, int pXpos, int pYpos, int pWidth, int pHeigh
         isRunning = true;
     }
     
-    player = new GameObject("assets/Knight.png", renderer, 0, 0);
+    player = new GameObject("assets/Knight.png", 0, 0);
 }
 
 void Game::handleEvents()
