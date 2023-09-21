@@ -76,6 +76,8 @@
 		4AE26E562ABAC05B00834B6F /* gameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameObject.cpp; sourceTree = "<group>"; };
 		4AE9300A2ABBDDB700321368 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
 		4AE9300B2ABBDF1F00321368 /* map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
+		4AE9300D2ABBF3FF00321368 /* ECS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECS.h; sourceTree = "<group>"; };
+		4AE930102ABC20E200321368 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Components.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,14 +135,16 @@
 				4AB9BF222ABA83710083783A /* Assets.xcassets */,
 				4AB9BF292ABA83710083783A /* _D_Game_Engine.entitlements */,
 				4AB9BF512ABA84D80083783A /* game.cpp */,
-				4AE26E522ABAA5E500834B6F /* TextureManager.h */,
-				4AE26E532ABAA67400834B6F /* textureManager.cpp */,
 				4AB9BF532ABA84E90083783A /* game.h */,
-				4AE26E552ABAB41500834B6F /* GameObject.h */,
+				4AE26E532ABAA67400834B6F /* textureManager.cpp */,
+				4AE26E522ABAA5E500834B6F /* TextureManager.h */,
+				4AE9300D2ABBF3FF00321368 /* ECS.h */,
+				4AE930102ABC20E200321368 /* Components.h */,
 				4AE26E562ABAC05B00834B6F /* gameObject.cpp */,
+				4AE26E552ABAB41500834B6F /* GameObject.h */,
 				4AE26E4F2ABA980B00834B6F /* main.cpp */,
-				4AE9300A2ABBDDB700321368 /* Map.h */,
 				4AE9300B2ABBDF1F00321368 /* map.cpp */,
+				4AE9300A2ABBDDB700321368 /* Map.h */,
 			);
 			path = 2D_Game_Engine;
 			sourceTree = "<group>";
