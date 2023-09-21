@@ -20,6 +20,7 @@
 		4AE26E512ABA980B00834B6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E4F2ABA980B00834B6F /* main.cpp */; };
 		4AE26E542ABAA67400834B6F /* textureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E532ABAA67400834B6F /* textureManager.cpp */; };
 		4AE26E572ABAC05B00834B6F /* gameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE26E562ABAC05B00834B6F /* gameObject.cpp */; };
+		4AE9300C2ABBDF1F00321368 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9300B2ABBDF1F00321368 /* map.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		4AE26E532ABAA67400834B6F /* textureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textureManager.cpp; sourceTree = "<group>"; };
 		4AE26E552ABAB41500834B6F /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		4AE26E562ABAC05B00834B6F /* gameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameObject.cpp; sourceTree = "<group>"; };
+		4AE9300A2ABBDDB700321368 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		4AE9300B2ABBDF1F00321368 /* map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				4AE26E552ABAB41500834B6F /* GameObject.h */,
 				4AE26E562ABAC05B00834B6F /* gameObject.cpp */,
 				4AE26E4F2ABA980B00834B6F /* main.cpp */,
+				4AE9300A2ABBDDB700321368 /* Map.h */,
+				4AE9300B2ABBDF1F00321368 /* map.cpp */,
 			);
 			path = 2D_Game_Engine;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				4AE26E572ABAC05B00834B6F /* gameObject.cpp in Sources */,
 				4AE26E542ABAA67400834B6F /* textureManager.cpp in Sources */,
 				4AE26E512ABA980B00834B6F /* main.cpp in Sources */,
+				4AE9300C2ABBDF1F00321368 /* map.cpp in Sources */,
 				4AB9BF522ABA84D80083783A /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
