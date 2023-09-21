@@ -8,7 +8,7 @@ public:
     Map();
     ~Map();
     
-    void loadMap();
+    void loadMap(int pMap[20][25]);
     void drawMap();
     
 private:
